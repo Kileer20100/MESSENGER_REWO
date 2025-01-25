@@ -1,3 +1,5 @@
+
+
 use dioxus::{logger::tracing::info, prelude::*};
 use dioxus_elements::{div, img, p, source::src};
 use svg_attributes::id;
@@ -5,6 +7,13 @@ use dioxus::prelude::*;
 fn main() {
     dioxus::launch(App);
 }
+
+#[derive(Routable, Clone, PartialEq)]
+ enum Route {
+     #[route( "/baf" )]
+     App,
+ }
+
 static CSS: Asset = asset!("/assets/main.css");
 #[component]
 fn App() -> Element {
@@ -34,12 +43,57 @@ fn Menu() -> Element {
        } }
     }
 }
+
 #[component]
 fn ImageHomeHead()->Element{
+    let mut couter_image: u8 = 0;
+
+    let mut img_src = use_signal(||"https://content.nebo.by/photos/stroymaterialy/big/webp/RAL-6018-ZHelto-zelyonii.webp");
+
+
+    let skip_left = move |_| {
+        couter_image -= 1;
+
+        if couter_image == 1 {
+            img_src.set("https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Red_flag.svg/800px-Red_flag.svg.png");
+        }
+        else if couter_image == 2 {
+            img_src.set("https://content.nebo.by/photos/stroymaterialy/big/webp/RAL-6018-ZHelto-zelyonii.webp");
+        }
+        else if couter_image == 3{
+            img_src.set("https://photogora.ru/img/product/th/4903/1473685252276134903.jpg");
+        }
+        else{
+            couter_image = 0;
+            img_src.set("");
+
+        }
+    };
+    let skip_right = move |evt| {
+        couter_image += 1;
+
+        if couter_image == 1 {
+            img_src.set("https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Red_flag.svg/800px-Red_flag.svg.png");
+        }
+        else if couter_image == 2 {
+            img_src.set("https://content.nebo.by/photos/stroymaterialy/big/webp/RAL-6018-ZHelto-zelyonii.webp");
+        }
+        else if couter_image == 3{
+            img_src.set("https://photogora.ru/img/product/th/4903/1473685252276134903.jpg");
+        }
+        else{
+            couter_image = 0;
+            img_src.set("");
+
+        }
+    };
+
     rsx!(
+
         div {  id: "image-mesanger",
-        button { id:"button_<","<" },
-        button { id:"button_>",">" }
+        button { onclick:skip_left, id:"button_<","<" },
+        img { src: "{img_src}" },
+        button { onclick:skip_right, id:"button_>", ">" },
     }
 
         div { p { id:"text-head", "You can download the app or use the web version on your device" } }

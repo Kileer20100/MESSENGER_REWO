@@ -3,6 +3,13 @@
 version = 4
 
 [[package]]
+name = "WORE"
+version = "0.1.0"
+dependencies = [
+ "dioxus",
+]
+
+[[package]]
 name = "addr2line"
 version = "0.24.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -783,9 +790,11 @@ dependencies = [
  "dioxus-html",
  "dioxus-logger",
  "dioxus-mobile",
+ "dioxus-router",
  "dioxus-signals",
  "dioxus-web",
  "manganis",
+ "serde",
 ]
 
 [[package]]
@@ -1095,6 +1104,34 @@ dependencies = [
  "jni",
  "libc",
  "once_cell",
+]
+
+[[package]]
+name = "dioxus-router"
+version = "0.6.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "0299dea6f8759eb766ecf79247d50139f4b640056c3e60e8af254ea6921fb60d"
+dependencies = [
+ "dioxus-cli-config",
+ "dioxus-history",
+ "dioxus-lib",
+ "dioxus-router-macro",
+ "rustversion",
+ "tracing",
+ "url",
+ "urlencoding",
+]
+
+[[package]]
+name = "dioxus-router-macro"
+version = "0.6.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "bb48c4f1e8fd66716191c9bd492b532de3dd0b59a278c0a35dd0755b7a05e2fc"
+dependencies = [
+ "proc-macro2",
+ "quote",
+ "slab",
+ "syn 2.0.96",
 ]
 
 [[package]]
@@ -3962,13 +3999,6 @@ dependencies = [
  "futf",
  "mac",
  "utf-8",
-]
-
-[[package]]
-name = "test"
-version = "0.1.0"
-dependencies = [
- "dioxus",
 ]
 
 [[package]]
