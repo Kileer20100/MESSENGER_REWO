@@ -20,6 +20,10 @@ body {
 
 
 }
+a {
+    text-decoration: none;
+}
+
 #button {
     background-color: #45A29E ;
     color: white; 
@@ -93,14 +97,14 @@ body {
 #text-WORE {
     padding: 10px;
     display: flex;
-    justify-content: center;  /* Центрирует по горизонтали */
-    align-items: center;      /* Центрирует по вертикали */
+    justify-content: center;  
+    align-items: center;    
     text-align: left;
     font-size: 20px;
     width: 60%;
-    height: 450px;  /* Добавлена конкретная высота для центрирования */
+    height: 450px;  
     background-color: #256d6a;
-    margin: 0 auto;  /* Центрирует блок в родительском элементе */
+    margin: 0 auto;  
 }
 #Info-wore-h2{
     display: flex;

@@ -12,15 +12,24 @@ async fn index() -> Option<NamedFile>  {
     
     NamedFile::open(Path::new("static/index.html")).await.ok()
 }
-#[get("/world/<seconds>")]           
-async fn world(seconds:u16) -> String {  
 
+#[get("/register")]
+async fn register() -> Option<NamedFile>  {
     sleep(Duration::from_secs(SLEEP_SERVER_TIME.into())).await;
-    format!("seka is {}",seconds)
+    
+    NamedFile::open(Path::new("static/register.html")).await.ok()
+}
+#[get("/login")]
+async fn login() -> Option<NamedFile>  {
+    sleep(Duration::from_secs(SLEEP_SERVER_TIME.into())).await;
+    
+    NamedFile::open(Path::new("static/login.html")).await.ok()
 }
 #[launch]
 async fn rocket() -> _ {
-    rocket::build().mount("/", routes![index])
-    .mount("/", routes![world])
+    rocket::build()
+    .mount("/", routes![index])
     .mount("/", FileServer::from("static"))
+    .mount("/", routes![register])
+    .mount("/", routes![login])
 }
