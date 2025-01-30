@@ -55,7 +55,7 @@ rustc 1.60.0 (f7e1b6d3b 2022-04-04)
 1. Клонируйте наш проект с GitHub:
 
    ```bash
-   git clone https://github.com/yourusername/WORE.git
+   git clone https://github.com/Kileer20100/MESSENGER_WORE.git
    ```
 
 2. Перейдите в директорию проекта WORE:
