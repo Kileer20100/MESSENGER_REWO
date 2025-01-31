@@ -89,7 +89,35 @@ rustc 1.60.0 (f7e1b6d3b 2022-04-04)
 3. Если все прошло успешно, вы увидите следующее в терминале:
 
    ```bash
-   Привет, мир! Приложение запущено.
+
+  🔧 Configured for debug.
+   >> address: 127.0.0.1
+   >> port: 8000
+   >> workers: 8
+   >> max blocking threads: 512
+   >> ident: Rocket
+   >> IP header: X-Real-IP
+   >> limits: bytes = 8KiB, data-form = 2MiB, file = 1MiB, form = 32KiB, json = 1MiB, msgpack = 1MiB, string = 8KiB
+   >> temp dir: /tmp
+   >> http/2: true
+   >> keep-alive: 5s
+   >> tls: disabled
+   >> shutdown: ctrlc = true, force = true, signals = [SIGTERM], grace = 2s, mercy = 3s
+   >> log level: normal
+   >> cli colors: true
+📬 Routes:
+   >> (index) GET /
+   >> (login) GET /login
+   >> (FileServer: static) GET /<path..> [10]
+   >> (register) GET /register
+📡 Fairings:
+   >> Shield (liftoff, response, singleton)
+🛡️ Shield:
+   >> X-Content-Type-Options: nosniff
+   >> X-Frame-Options: SAMEORIGIN
+   >> Permissions-Policy: interest-cohort=()
+
+   
    ```
 
 ---
