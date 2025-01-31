@@ -88,7 +88,7 @@ rustc 1.60.0 (f7e1b6d3b 2022-04-04)
 
 3. Если все прошло успешно, вы увидите следующее в терминале:
 
-
+```
 🔧 Configured for debug.
    >> address: 127.0.0.1
    >> port: 8000
@@ -116,7 +116,7 @@ rustc 1.60.0 (f7e1b6d3b 2022-04-04)
    >> X-Frame-Options: SAMEORIGIN
    >> Permissions-Policy: interest-cohort=()
 🚀 Rocket has launched from http://127.0.0.1:8000
-  
+  ```
  
 
    
