@@ -1,7 +1,7 @@
 # 🚀 Проект "WORE"
 
-[![Build Status](https://img.shields.io/badge/Development-WORE-brightgreen)](https://github.com/yourusername/superapp/actions)
-[![Version](https://img.shields.io/badge/version-0.0.01-red)](https://github.com/yourusername/superapp/releases)
+[![Build Status](https://img.shields.io/badge/Development-WORE-brightgreen)](https://github.com/Kileer20100/MESSENGER_WORE)
+[![Version](https://img.shields.io/badge/version-0.0.01-red)](https://github.com/Kileer20100/MESSENGER_WORE)
 
 ## 📜 Описание
 
