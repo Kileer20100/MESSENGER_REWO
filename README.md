@@ -1,6 +1,6 @@
 # 🚀 Проект "WORE"
 
-[![Build Status](https://img.shields.io/badge/build-passing-brightgreen)](https://github.com/yourusername/superapp/actions)
+[![Build Status](https://img.shields.io/badge/Development-WORE-brightgreen)](https://github.com/yourusername/superapp/actions)
 [![Version](https://img.shields.io/badge/version-0.0.01-red)](https://github.com/yourusername/superapp/releases)
 
 ## 📜 Описание
