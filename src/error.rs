@@ -15,7 +15,7 @@ pub fn error_tester() {
 /// The function bd_test() test the connection to database server.
 fn bd_test() {
 
-    let url = "";
+    let url = "mysql://wore_user:Q9NXsREfSEcrwJV!@localhost:3306/wrereg";
     let pool = Pool::new(url).expect("Failed to connect to database");
     let _conn = pool.get_conn().expect("Failed to get connection");
     println!("✅ Database connection test passed!");

@@ -1,0 +1,29 @@
+
+html, body {
+    background-color: #0B0c10;
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100%;
+    margin: 0;
+  
+
+
+}
+#Head-logo{
+    width: 100%;
+    height: 50px;
+    background-color: #266460;
+    
+
+}
+#Server-list{
+    width: 100px;
+    height: 100%;
+    background-color: #66fcf27a;
+}
+
+#Logo{
+    margin-top: 10px;
+    margin-left: 10px;
+    color: #66fcf1 ;
+}
