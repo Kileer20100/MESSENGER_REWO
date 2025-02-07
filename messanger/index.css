@@ -1,4 +1,3 @@
-
 html, body {
     background-color: #0B0c10;
     color: #ffffff;
@@ -6,56 +5,68 @@ html, body {
     height: 100%;
     width: 100%;
     margin: 0;
-    overflow: hidden;
-
+    overflow: auto;
 }
-#Content{
+
+#Content {
     width: 100%;
     height: 100%;
-    margin: 0px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
 }
-#Head-logo{
+
+#Head-logo {
     width: 100%;
     height: 50px;
     background-color: #266460;
-    
-
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
 }
-#Server-list{
+
+#Logo {
+    color: #66fcf1;
+    margin: 0;
+}
+
+#Head-Nav {
+    width: 100%;
+    height: calc(100% - 50px);
+    display: flex;
+}
+
+#Server-list {
     width: 100px;
-    height: 100%;
+    flex-shrink: 0;
     background-color: #66fcf27a;
 }
 
-#Logo{
-    margin-top: 10px;
-    margin-left: 10px;
-    color: #66fcf1 ;
+#Chat {
+    flex-grow: 1;
+    background-color: #e7f2f2;
 }
 
-#Chat{
-    width: 70%;
-    height: 100%;
-    background-color: #e7f2f2;
-    
-}
-#Group{
+#Group {
     width: 23%;
-    height: 100%;
+    flex-shrink: 0;
     background-color: #e7f2f2;
 }
 
-#Server-list, #Chat,#Group{
-      display: inline-block;
-    border: 1px solid black;
-}
-#Chat,#Group{
-    display: inline-block;
-  border: 1px solid black;
+#Name-group-chat {
+    width: 98%;
+    height: 75px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: #66fcf1;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
 }
 
-#Head-Nav{
-    width: 100%;
-    height: 100%;
-    
+#Image-group {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background-color: #000000;
 }
