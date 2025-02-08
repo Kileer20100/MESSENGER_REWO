@@ -6,6 +6,7 @@ html, body {
     width: 100%;
     margin: 0;
     overflow: auto;
+    overflow-x: hidden;
 }
 
 #Content {
@@ -45,16 +46,22 @@ html, body {
 #Chat {
     flex-grow: 1;
     background-color: #e7f2f2;
+    border-radius: 10px;
 }
 
 #Group {
     width: 23%;
+    height: 100%;
+    margin-left: 10px;
     flex-shrink: 0;
     background-color: #e7f2f2;
+    border-radius: 10px;
 }
-
+#H1{
+    margin-left: 5px;
+}
 #Name-group-chat {
-    width: 98%;
+    width: 70%;
     height: 75px;
     margin: 10px;
     border-radius: 10px;
@@ -62,11 +69,72 @@ html, body {
     display: flex;
     align-items: center;
     padding-left: 10px;
+    
 }
 
 #Image-group {
     width: 75px;
     height: 75px;
     border-radius: 50%;
+    background-color: #000000;
+}
+
+#Chat-mesange{
+    width: 95%;
+    height: 80%;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: #66fcf1;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+
+}
+#Chat-input{
+    width: 90%;
+    height: 30px;
+    margin-left: 10px;
+    border-radius: 10px;
+    background-color: #66fcf1;
+}
+
+#Send-btn {
+    background-color: #45A29E ;
+    color: white; 
+    padding: 12px 24px; 
+
+    font-weight: bold; 
+    border: none; 
+    
+    border-radius: 8px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+    cursor: pointer; 
+    transition: all 0.8s ease;
+
+}
+
+#Send-btn:hover {
+    background-color: #2fbfb894; 
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3); 
+
+}
+
+#Send-btn:active{
+    background-color: #138783; 
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2); 
+
+}
+#Group-list-left{
+    width: 95%;
+    height: 75px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: #66fcf1;
+}
+#Group-image{
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    margin-left: 5px;
     background-color: #000000;
 }

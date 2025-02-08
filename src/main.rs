@@ -69,16 +69,25 @@ fn loginfofrm(form: Form<LoginForm>) -> String {
     format!("{} {} ", form.username, form.password)
 }
 
+#[get("/list/network")]
+async fn list_network() -> Option<NamedFile> {
+    sleep(Duration::from_secs(SLEEP_SERVER_TIME.into())).await;
+    NamedFile::open(Path::new("messanger/serverlist.html")).await.ok()
+}
+
+
 #[launch]
 async fn rocket() -> _ {
     error::error_tester();
     
     rocket::build()
     .mount("/", routes![index])
-    .mount("/", FileServer::from("static"))
+    .mount("/static", FileServer::from("static"))
     .mount("/", routes![register])
     .mount("/", routes![login])
     .mount("/", routes![registerform])
     .mount("/", routes![loginfofrm])
+    .mount("/messanger", FileServer::from("messanger"))
+    .mount("/", routes![list_network])
 
 }
