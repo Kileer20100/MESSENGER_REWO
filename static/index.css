@@ -27,7 +27,7 @@ a {
     text-decoration: none;
     color: #5FE4DB;
     opacity: 0;
-    animation: fadeIn 1s ease-in forwards; /* Плавное появление ссылки */
+    animation: fadeIn 1s ease-in forwards;
 }
 
 /* Панель меню */
@@ -68,9 +68,8 @@ a {
     background-color: #616161;
     display: flex;
     justify-content: center;
-    align-items: center; /* Центрируем по вертикали */
+    align-items: center;
     text-align: center;
-
 }
 
 /* Блок с текстом на баннере */
@@ -135,48 +134,46 @@ a {
     margin-bottom: 10px;
     border-radius: 15px;
 }
-h2{
+
+h2 {
     display: flex;
-    justify-content: center;  /* Центрирует по горизонтали */
+    justify-content: center; 
     align-items: center;    
     margin-top: 50px;
-    
 }
-.text-WORE{
+
+.text-WORE {
     width: 1053px;
     height: 300px;
     background-color: #256D6A;
     border-radius: 5px;
     font-size: 24px;
-    
-    
 }
-p{
+
+p {
     margin: 10px;
 }
-.text-content{
+
+.text-content {
     width: 100%;
     display: flex;
-    justify-content: center;  /* Центрирует по горизонтали */
+    justify-content: center; 
     align-items: center; 
-} 
+}
 
-.info-contact{
+.info-contact {
     margin-top: 30px;
     width: 100%;
     height: 340px;
     background-color: #0B0C10;
 }
 
-
-h3{
-    
+h3 {
     font-size: 20px;
     color: #66FCF1;
 }
 
-
-.footer{
+.footer {
     margin-top: 10px;
 }
 
@@ -216,4 +213,132 @@ h3{
 
 .footer-column a:hover {
     text-decoration: underline;
+}
+
+/* Медиазапросы для адаптивности */
+@media (max-width: 1200px) {
+    .Panel-menu {
+        padding: 0 10px;
+    }
+
+    .Panel {
+        gap: 15px;
+    }
+
+    .Panel-dowload-web {
+        gap: 15px;
+    }
+
+    .logo {
+        font-size: 35px;
+    }
+
+    .Menu-navigate-text {
+        font-size: 20px;
+    }
+
+    .button {
+        font-size: 20px;
+    }
+
+    .text-WORE {
+        width: 90%;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-column {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 972px) {
+    .Panel-menu {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    .Panel {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .Panel-dowload-web {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .logo {
+        font-size: 30px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .Menu-navigate-text {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .image-mesanger {
+        height: 600px;
+    }
+
+    .text-WORE {
+        width: 100%;
+        height: auto;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-column {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .Panel-menu {
+        padding: 10px;
+    }
+
+    .Panel {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .logo {
+        font-size: 25px;
+        text-align: center;
+        margin-bottom: 5px;
+    }
+
+    .Menu-navigate-text {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .button {
+        font-size: 18px;
+        padding: 10px 20px;
+    }
+
+    .text-WORE {
+        font-size: 20px;
+        width: 100%;
+        height: auto;
+    }
+
+    .footer-content {
+        padding: 10px;
+    }
+
+    .footer-column {
+        margin-bottom: 10px;
+    }
 }
