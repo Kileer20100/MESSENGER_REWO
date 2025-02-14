@@ -1,4 +1,4 @@
-# 🚀 Проект "WORE"
+# 🚀 Проект WORE
 
 [![Build Status](https://img.shields.io/badge/Development-WORE-brightgreen)](https://github.com/Kileer20100/MESSENGER_WORE)
 [![Version](https://img.shields.io/badge/version-0.0.01-red)](https://github.com/Kileer20100/MESSENGER_WORE)
